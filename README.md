@@ -6,18 +6,17 @@ To run the server
 ```bash
 node server.js
 ```
+---
+The GraphQL server can be tested with the following POST requests:
 
-The GraphQL server can be tested with the following POST requests
-
-Middleware Test:
 ```json
+// Middleware Test
 {
     "query": "query ip { ip }" 
 }
 ```
-
-rollDice Query:
 ```json
+// rollDice Query
 {
     "query": "query RollDice($dice: Int!, $sides: Int) { rollDice(numDice: $dice, numSides: $sides ) }",
     "variables": {
@@ -26,8 +25,8 @@ rollDice Query:
     }
 }
 ```
-RandomDie Query:
 ```json
+// randomDie Query
 {
     "query": "query RandomDie($numSides: Int!, $numRolls: Int!) { getDie(numSides: $numSides) { rollOnce roll(numRolls: $numRolls ) } }",
     "variables": {
@@ -36,11 +35,8 @@ RandomDie Query:
     }
 }
 ```
-
-
-
-CreateMessage Query
 ```json
+// createMessage Mutation
 {
     "query": "mutation CreateMessage($input: MessageInput) { createMessage(input: $input) { id } }",
     "variables": {
@@ -51,9 +47,8 @@ CreateMessage Query
     }
 }
 ```
-
-GetMessage Query
 ```json
+// getMessage Query
 {
     "query": "query GetMessage($id: ID!) { getMessage(id: $id)} { id author content } }",
     "variables": {
@@ -61,5 +56,3 @@ GetMessage Query
     }
 }
 ```
-
-
