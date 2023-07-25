@@ -1,13 +1,13 @@
 # graphql-express-tutorial
 
-Completed code for a GraphQL tutorial (JS) which can be found on the official site [here](https://graphql.org/graphql-js/)
+Completed code for the official GraphQL tutorial (JS) which can be found [here](https://graphql.org/graphql-js/)
 
 To run the server 
 ```bash
 node server.js
 ```
 
-The GraphQL server can be tested using the following POST requests
+The GraphQL server can be tested with the following POST requests
 
 Middleware Test:
 ```json
