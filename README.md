@@ -10,13 +10,13 @@ node server.js
 The GraphQL server can be tested with the following POST requests:
 
 ```json
-// Middleware Test
+/* Middleware Test */
 {
     "query": "query ip { ip }" 
 }
 ```
 ```json
-// rollDice Query
+/* rollDice Query */
 {
     "query": "query RollDice($dice: Int!, $sides: Int) { rollDice(numDice: $dice, numSides: $sides ) }",
     "variables": {
@@ -26,7 +26,7 @@ The GraphQL server can be tested with the following POST requests:
 }
 ```
 ```json
-// randomDie Query
+/* randomDie Query */
 {
     "query": "query RandomDie($numSides: Int!, $numRolls: Int!) { getDie(numSides: $numSides) { rollOnce roll(numRolls: $numRolls ) } }",
     "variables": {
@@ -36,7 +36,7 @@ The GraphQL server can be tested with the following POST requests:
 }
 ```
 ```json
-// createMessage Mutation
+/* createMessage Mutation */
 {
     "query": "mutation CreateMessage($input: MessageInput) { createMessage(input: $input) { id } }",
     "variables": {
@@ -48,7 +48,7 @@ The GraphQL server can be tested with the following POST requests:
 }
 ```
 ```json
-// getMessage Query
+/* getMessage Query */
 {
     "query": "query GetMessage($id: ID!) { getMessage(id: $id)} { id author content } }",
     "variables": {
