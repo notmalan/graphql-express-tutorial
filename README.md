@@ -28,11 +28,13 @@ rollDice Query:
 ```
 RandomDie Query:
 ```json
+{
     "query": "query RandomDie($numSides: Int!, $numRolls: Int!) { getDie(numSides: $numSides) { rollOnce roll(numRolls: $numRolls ) } }",
     "variables": {
         "numSides": 6,
         "numRolls": 3,
     }
+}
 ```
 
 
