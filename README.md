@@ -1,13 +1,13 @@
 # graphql-express-tutorial
 
-Completed code for the official GraphQL tutorial (JS) which can be found [here](https://graphql.org/graphql-js/)
+This is a completed exercise for the official GraphQL tutorial (JS) which can be found [here](https://graphql.org/graphql-js/)
 
-To run the server 
+To run the server
 ```bash
 node server.js
 ```
 ---
-The GraphQL server can be tested with the following POST requests:
+### The GraphQL server can be tested with the following POST requests:
 
 **Middleware test:**
 ```json
@@ -41,8 +41,8 @@ The GraphQL server can be tested with the following POST requests:
     "query": "mutation CreateMessage($input: MessageInput) { createMessage(input: $input) { id } }",
     "variables": {
         "input" {
-            "author": "Author",
-            "content": "Content Body"
+            "author": "some authors name",
+            "content": "some content"
         }
     }
 }
@@ -52,7 +52,7 @@ The GraphQL server can be tested with the following POST requests:
 {
     "query": "query GetMessage($id: ID!) { getMessage(id: $id)} { id author content } }",
     "variables": {
-        "id": "<PLACE A VALID ID HERE>"
+        "id": "enter a valid id here"
     }
 }
 ```
