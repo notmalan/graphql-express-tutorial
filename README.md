@@ -7,7 +7,7 @@ To run the server
 node server.js
 ```
 ---
-### The GraphQL server can be tested with the following POST requests:
+The GraphQL server can be tested with the following POST requests:
 
 **Middleware test:**
 ```json
